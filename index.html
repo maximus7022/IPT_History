@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="IMAGES/IPT_LOGO.png" type="image/png">
+		<title>IPT History</title>
+		<style>
+			body{
+				margin: 0;
+			}
+
+			::-webkit-scrollbar {
+				width: 0px;
+			}
+
+			h1{
+				margin: 0;
+				
+			}
+
+			.hat{
+				background: url("IMAGES/IMG_1166.jpg") center no-repeat;
+    			background-size: cover;
+    			background-attachment: fixed;
+    			width: 100%;
+    			height: 105vh;
+			}
+
+			 #Up_title{
+				background-color: #181915;
+				color: #E7C855;
+    			margin-top: 0;
+    			width: 100%;
+    			height: 44px;
+    			position: fixed;
+    			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    			z-index: 1000;
+			}
+
+			#Title{
+				color: #E7C855;
+				margin: 0;
+    			font-size: 100px;
+    			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			}
+
+			.main_block{
+				margin-top:20px;
+				margin-left:25px; 
+				width:1488px; 
+				height:4100px; 
+				background-color:#181915; 
+				padding-top: 50px;
+			}
+
+			#logo_block{
+				width:350px; 
+				height:350px; 
+				background-color:#282923; 
+				margin-left:50px; 
+				padding-left: 50px; 
+				padding-top: 45px;
+			}
+
+			#logo{
+				transition: 1s;
+			}
+
+			#logo:hover{
+				transform: scale(1.2);
+			}
+
+			#intro_text_block{
+				margin-top:-396px;
+				width:835px; 
+				height:346px; 
+				background-color:#282923; 
+				margin-left:500px; 
+				padding-left: 50px; 
+				padding-top: 50px; 
+				padding-right: 50px;
+			}
+
+			#intro_text{
+				color: #E7C855;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			}
+
+			#history_block{
+				margin-top:50px;
+				width:1286px; 
+				height:920px; 
+				background-color:#282923; 
+				margin-left:50px; 
+				padding-left: 50px; 
+				padding-top: 40px; 
+				padding-right: 50px;
+			}
+
+			#block_title{
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				color: #E7C855;
+			}
+
+			#history_pic{
+				float: right;
+    			margin: 20px 0 15px 30px;
+    			transition: 0.5s;
+			}
+
+			#history_pic:hover{
+				transform: scale(1.1);
+				box-shadow: 5px -5px 30px rgba(231,200,85,.4);
+			}
+
+			#history_text{
+				color: grey;
+			}
+
+			#history_pic2{
+				float: left;
+				margin: 28px 30px 15px 0px;
+				transition: 0.5s;
+			}
+
+			#history_pic2:hover{
+				transform: scale(1.1);
+				box-shadow: -5px 5px 30px rgba(231,200,85,.4);
+			}
+
+			#video_block{
+				margin-top:50px;
+				width:1286px; 
+				height:550px; 
+				background-color:#282923; 
+				margin-left:50px; 
+				padding-left: 50px; 
+				padding-top: 40px; 
+				padding-right: 50px;
+			}
+
+			#grad_block{
+				margin-top:50px;
+				width:1286px; 
+				height:1500px; 
+				background-color:#282923; 
+				margin-left:50px; 
+				padding-left: 50px; 
+				padding-top: 40px; 
+				padding-right: 50px;
+			}
+
+			#grad_title{
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				color: #E7C855;
+			}
+
+			#grad_pic{
+				float: right;
+    			margin: 20px 0 15px 30px;
+    			display: inline-block;
+    			overflow: hidden;
+    			transition: 0.5s;
+			}
+
+			#grad_pic img{
+				display:block;
+				transition: 0.5s;
+			}
+
+			#grad_pic img:hover{
+				transform: scale(1.1);
+			}
+
+			#grad{
+				line-height: 50px;
+				margin-left: 40px;
+				color: #D9CDD2;
+			}
+
+			#button{
+				text-decoration: none;
+  				outline: none;
+  				display: inline-block;
+				width: 800px;
+				height: 200px;
+				line-height: 180px;
+				border-radius: 45px;
+				margin: 120px 350px;
+				font-family: 'Montserrat', sans-serif;
+				text-transform: uppercase;
+				font-size: 60px;
+				text-align: center;
+				letter-spacing: 3px;
+				font-weight: 600;
+				color: #E7C855;
+				background: #282923;
+				box-shadow: 0 8px 15px rgba(0,0,0,.1);
+				transition: .3s;
+			}
+			#button:hover{
+				background: #E7C855;
+				box-shadow: 0 15px 20px rgba(231,200,85,.4);
+				color: #282923;
+				transform: translateY(-7px);
+			}
+
+			.footer{
+				margin-top:20px; 
+				width:1436px; 
+				height:120px; 
+				background-color:#181915; 
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+			#footer_pic{
+				float: left;
+				margin: 0px 60px 0px 0px;;
+			}
+
+			#footer_text{
+				margin-top: -10px;
+				color: #E7C855;
+			}
+
+			#tlg{
+				transition: 0.5s;
+				float:right;
+				margin: 12px 0px 0px 0px;
+			}
+			#tlg:hover{
+				transform: scale(1.2);
+			}
+		</style>
+	</head>
+
+	<body bgcolor="#282923" alink="#E7C855" vlink="#E7C855">
+		<div align="center" class="hat">
+			<div id="Up_title">
+				<h1><i>Фізико Технічний Інститут</i></h1>
+			</div>
+			<h1 id="Title">
+				<br/>Національний технічний університет України<br/>
+				"Київський політехнічний інститут імені Ігоря Сікорського"
+			</h1>
+		</div>
+
+		<div class="main_block">
+			<div id="logo_block">
+        		<img id="logo" src="IMAGES/IPT_LOGO.png" width="300px" height="300px"/>
+        	</div>
+
+        	<div id="intro_text_block">
+        		<h1 id="intro_text"><i><p><a href="http://ipt.kpi.ua/">Фізико-технічний інститут</a> —<article> один із науково-навчальних підрозділів НТУУ «КПІ імені Ігоря Сікорського», заснований у лютому 1995 року. Інститут готує фахівців з сучасних розділів прикладної фізики, інформатики та інформаційної безпеки.</article></i></h1>
+        	</div>
+
+        	<div id="history_block">
+        		<h1 align="center" id="block_title">ІСТОРІЯ</h1>
+        		<img id="history_pic" src="IMAGES/history_photo.jpg" width="400px" height="300px"/>
+        		<h2 id="history_text"><i>В сучасних умовах ринкової економiки, прискореного розвитку наукоємних технологiй зростає попит на фахiвцiв з широкою загальнонауковою освiтою, що поєднується з вузькою спецiалiзацiєю, здатних швидко змiнювати рiд та характер професiйної дiяльностi, переоцiнювати накопичений досвiд, аналiзувати свої можливостi, набувати нових знань з використанням сучасних iнформацiйних технологiй, працювати над мiждисциплiнарними проектами, використовувати свої знання в рiзноманiтних галузях науки i технiки. Такi фахiвцi вкрай потрiбнi установам Нацiональної академiї наук України, Мiнiстерства освiти i науки України, державним структурам iнших мiнiстерств та вiдомств, а також структурам недержавної форми власностi, якi впроваджують наукоємнi технологiї.</p>
+
+				<p>Пiдготовка фахiвцiв такого профiлю в колишньому СРСР проводилась за фiзтехiвською системою, започаткованою в Ecol Politecnik (Францiя), Калiфорнiйському технологiчному університеті. Фiзтехiвська система освiти в колишньому СРСР впроваджена лауреатом Нобелевської премiї академiком Капiцею П.Л. в Московському фiзико-технiчному iнститутi (МФТI). ЇЇ принципи знайшли багато прихильникiв i були запозиченi та реалiзованi низкою iнших вищих навчальних закладiв. Основнi принципи фiзтехiвської системи освiти: глибока пiдготовка з фундаментальних наук: одночасно високий рiвень математичної та фiзичної освiти; пiдготовка з iноземних мов в пiдвищеному обсязi; поєднання широкої загальнонаукової освiти в кращих унiверситетських традицiях з вузькою спецiалiзацiєю та отриманням практичних навичок роботи в базових iнститутах. iз здобуттям Україною незалежностi учбовi заклади, якi реалiзовували фiзтехiвську систему освiти, на жаль, залишилися за межами України.
+
+				<img id="history_pic2" src="IMAGES/history_photo2.jpg" width="350px" height="240px"/>
+				
+				<p>Зараз Фiзико-технiчний інститут готує фахiвцiв, що забезпечують технологiчну незалежнiсть та iнформацiйну безпеку України. Протягом навчання студенти  отримують освiту на рiвнi кращих унiверситетiв свiту, про що свiдчать неодноразовi переконливi перемоги на Мiжнародних студентських олiмпiадах у Лондонi, Будапештi Тегеранi, Празi. Випускники працюють в установах НАН України, органах державної влади України, установах i компанiях державної та недержавної форми власностi, де основними вимогами до спiвробiтникiв є високий iнтелект, глибокi знання, здiбнiсть працювати в умовах жорстокої iнтелектуальної конкуренцiї.</i></h2>
+        	</div>
+
+        	<div id="video_block">
+        		<iframe width="1290" height="510" src="https://www.youtube.com/embed/8GeayQGVua0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</div>
+
+        	<div id="grad_block">
+        		<h1 align="center" id="block_title">ВИПУСКНИКИ</h1>
+
+        		<h1 id="grad_title"><i>2015:</i></h1>
+        		<div id="grad_pic">
+					<img src="IMAGES/15_grad.jpg" width="650px" height="400px"/>
+				</div>
+        		<td width="290px">
+					<ol id="grad">
+						<h2><li>Беспалов Олексій Юрійович</li>
+						<li>Вихло Надія Андріївна</li>
+						<li>Гончар Іван Сергійович</li>
+						<li>Деркач Олександр Григорович</li>
+						<li>Кліндухов Василь Євгенійович</li>
+						<li>Кушнір Ірина Ігорівна</li>
+						<li>Мурзін Олександр Олександрович</li>
+						<li>Ткачук Олексій Сергійович</li></h2>
+					</ol>
+				</td>
+
+				<h1 id="grad_title"><i>2014:</i></h1>
+
+				<div id="grad_pic">
+					<img src="IMAGES/16_grad.jpg" width="650px" height="400px"/>
+				</div>
+
+				<td width="290px">
+					<ol id="grad">
+						<h2><li>Гавренков Антон Олександрович</li>
+						<li>Гончарук Ростислав Ігорович</li>
+						<li>Кривицька Тетяна Сергіївна</li>
+						<li>Пашинський Володимир Сергійович</li>
+						<li>Полупан Вікторія Вікторівна</li>
+						<li>Трофимович Сергій Валерійович</li>
+						<li>Чайковський Олексій Андрійович</li>
+						<li>Шевченко Антон Володимирович</li></h2>
+					</ol>
+				</td>
+
+				<h1 id="grad_title"><i>2013:</i></h1>
+
+				<div id="grad_pic">
+					<img src="IMAGES/13_grad.jpg" width="650px" height="400px"/>
+				</div>
+
+				<td width="290px">
+					<ol id="grad">
+						<h2><li>Андросов Андрій Валентинович</li>
+						<li>Байденко Поліна Валентинівна</li>
+						<li>Булавін Сергій Вікторович</li>
+						<li>Довгань Катерина Олегівна</li>
+						<li>Зайцева Наталія Юріївна</li>
+						<li>Лі Юрій Сергійович</li>
+						<li>Остролуцький Кирило Павлович</li>
+						<li>Семибаламут Максим Андрійович</li></h2>
+					</ol>
+				</td>
+        	</div>
+
+        	<a href="form.html" id="button">ЗАПОВНІТЬ ФОРМУ</a>
+
+        </div>
+
+		<div class="footer">
+			<img id="footer_pic" src="IMAGES/IPT_LOGO.png" width="120px" height="120px"/>
+			<a href="https://t.me/dekanat_fti"><img id="tlg" src="IMAGES/Telegram.png" width="100px" height="100px"/></a>
+
+			<h3 id="footer_text"><p>Фiзико-технiчний інститут 
+
+			<p>Адреса: 03056, Київ, пр.Перемоги, 37, НТУУ "КПI ім. Ігоря Сікорського"
+
+			<p>Контакти: Телефон: +38 (044) 236 70 98 ; email: ipt.kpi.ua[at]gmail.com</h3>
+		</div>
+		
+	</body>
+</html>
